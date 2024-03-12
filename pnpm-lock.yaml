@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   ai:
-    specifier: 3.1.0-canary.0
-    version: 3.1.0-canary.0(react@18.2.0)(solid-js@1.8.15)(svelte@4.2.12)(vue@3.4.21)(zod@3.22.4)
+    specifier: 3.1.0-canary.1
+    version: 3.1.0-canary.1(react@18.2.0)(solid-js@1.8.15)(svelte@4.2.12)(vue@3.4.21)(zod@3.22.4)
   dotenv:
     specifier: 16.4.5
     version: 16.4.5
@@ -396,8 +396,8 @@ packages:
     hasBin: true
     dev: false
 
-  /ai@3.1.0-canary.0(react@18.2.0)(solid-js@1.8.15)(svelte@4.2.12)(vue@3.4.21)(zod@3.22.4):
-    resolution: {integrity: sha512-CmTuClD6Cdwx9UkHx2wph8OOWAQ0x1NsV1G9ZyDkKsUDiCVDN9Q+K8z3bzTT6zYjTcNK+9GrBuQ8Z9HfvBV6/g==}
+  /ai@3.1.0-canary.1(react@18.2.0)(solid-js@1.8.15)(svelte@4.2.12)(vue@3.4.21)(zod@3.22.4):
+    resolution: {integrity: sha512-S6p7HBIUohf6l17JCnfde/RNcEaKxNx3SYujz9gdCJE1TZEqyTfhp6E9y6kcTQXTUyaPl+G/3p6aSMcUqF2pIw==}
     engines: {node: '>=14.6'}
     peerDependencies:
       react: ^18.2.0
