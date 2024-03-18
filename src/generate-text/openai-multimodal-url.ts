@@ -1,7 +1,6 @@
 import { generateText } from 'ai/core';
 import { OpenAI } from 'ai/provider';
 import dotenv from 'dotenv';
-import fs from 'node:fs';
 
 dotenv.config();
 
@@ -16,7 +15,12 @@ async function main() {
         role: 'user',
         content: [
           { type: 'text', text: 'Describe the image in detail.' },
-          { type: 'image', image: fs.readFileSync('./data/comic-cat.png') },
+          {
+            type: 'image',
+            image: new URL(
+              'https://raw.githubusercontent.com/vercel/ai/v3.1-canary/examples/ai-core/data/comic-cat.png',
+            ),
+          },
         ],
       },
     ],

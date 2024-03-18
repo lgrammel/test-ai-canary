@@ -9,7 +9,7 @@ const openai = new OpenAI();
 
 async function main() {
   const result = await generateObject({
-    model: openai.chat({ id: 'gpt-4-turbo-preview' }),
+    model: openai.chat('gpt-4-turbo-preview'),
     maxTokens: 2000,
     schema: z.object({
       characters: z.array(
@@ -27,6 +27,9 @@ async function main() {
   });
 
   console.log(JSON.stringify(result.object, null, 2));
+  console.log();
+  console.log('Token usage:', result.usage);
+  console.log('Finish reason:', result.finishReason);
 }
 
 main();
