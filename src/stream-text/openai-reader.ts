@@ -15,8 +15,13 @@ async function main() {
     prompt: 'Invent a new holiday and describe its traditions.',
   });
 
-  for await (const textPart of result.textStream) {
-    process.stdout.write(textPart);
+  const reader = result.textStream.getReader();
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) {
+      break;
+    }
+    process.stdout.write(value);
   }
 }
 
